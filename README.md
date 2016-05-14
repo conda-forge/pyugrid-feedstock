@@ -5,7 +5,7 @@ Home: https://github.com/pyugrid/pyugrid
 
 Package license: BSD
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A Python API to utilize data written using the unstructured grid UGRID conventions.
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyugrid-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyugrid-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyugrid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyugrid-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyugrid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyugrid-feedstock/branch/master)
