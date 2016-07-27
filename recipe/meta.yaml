@@ -22,10 +22,15 @@ requirements:
         - python
         - numpy
         - netcdf4
+        - cell_tree2d >=0.2.0
 
 test:
+    requires:
+        - pytest
     imports:
         - pyugrid
+    commands:
+        - py.test --pyargs cell_tree2d
 
 about:
     home: https://github.com/pyugrid/pyugrid
