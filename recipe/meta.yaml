@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/pyugrid/pyugrid
-  license: BSD
+  license: BSD 3-Clause
   summary: 'A Python API to utilize data written using the unstructured grid UGRID conventions.'
 
 extra:

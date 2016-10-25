@@ -3,7 +3,7 @@ About pyugrid
 
 Home: https://github.com/pyugrid/pyugrid
 
-Package license: BSD
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
