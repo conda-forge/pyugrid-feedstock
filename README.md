@@ -11,6 +11,18 @@ Summary: A Python API to utilize data written using the unstructured grid UGRID 
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyugrid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyugrid-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyugrid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyugrid-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyugrid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyugrid-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyugrid/badges/version.svg)](https://anaconda.org/conda-forge/pyugrid)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyugrid/badges/downloads.svg)](https://anaconda.org/conda-forge/pyugrid)
+
 Installing pyugrid
 ==================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `pyugrid` available on your platfo
 ```
 conda search pyugrid --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyugrid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyugrid-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyugrid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyugrid-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyugrid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyugrid-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyugrid/badges/version.svg)](https://anaconda.org/conda-forge/pyugrid)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyugrid/badges/downloads.svg)](https://anaconda.org/conda-forge/pyugrid)
 
 
 Updating pyugrid-feedstock
