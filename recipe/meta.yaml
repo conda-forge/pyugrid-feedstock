@@ -26,8 +26,8 @@ test:
   imports:
     - pyugrid
   commands:
-    #- conda inspect linkages -p $PREFIX pyugrid  # [not win]
-    #- conda inspect objects -p $PREFIX pyugrid  # [osx]
+    - conda inspect linkages -p $PREFIX pyugrid  # [not win]
+    - conda inspect objects -p $PREFIX pyugrid  # [osx]
 
 about:
   home: https://github.com/pyugrid/pyugrid
