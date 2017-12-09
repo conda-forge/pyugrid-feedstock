@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: pyugrid
@@ -7,7 +7,7 @@ package:
 source:
   fn: pyugrid-{{ version }}.tar.gz
   url: https://github.com/pyugrid/pyugrid/archive/v{{ version }}.tar.gz
-  sha256: da10953f66fec2320688790f63332b8458952742694ff6e4daa765d2ea6bdcde
+  sha256: caac842c85b29c002f8d935c0ec293156c5e5c4dcc230a62e06639fdaecc1de6
 
 build:
   number: 0
