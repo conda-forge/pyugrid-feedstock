@@ -5,18 +5,18 @@ package:
   version: {{ version }}
 
 source:
-  fn: pyugrid-{{ version }}.tar.gz
   url: https://github.com/pyugrid/pyugrid/archive/v{{ version }}.tar.gz
   sha256: caac842c85b29c002f8d935c0ec293156c5e5c4dcc230a62e06639fdaecc1de6
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 2
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - numpy
@@ -25,9 +25,6 @@ requirements:
 test:
   imports:
     - pyugrid
-  commands:
-    - conda inspect linkages -p $PREFIX pyugrid  # [not win]
-    - conda inspect objects -p $PREFIX pyugrid  # [osx]
 
 about:
   home: https://github.com/pyugrid/pyugrid
