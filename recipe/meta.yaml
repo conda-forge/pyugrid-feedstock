@@ -9,20 +9,22 @@ source:
   sha256: caac842c85b29c002f8d935c0ec293156c5e5c4dcc230a62e06639fdaecc1de6
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - netcdf4
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyugrid
 
