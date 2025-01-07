@@ -9,27 +9,31 @@ source:
   sha256: caac842c85b29c002f8d935c0ec293156c5e5c4dcc230a62e06639fdaecc1de6
 
 build:
-  number: 2
+  number: 3
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - netcdf4
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyugrid
 
 about:
   home: https://github.com/pyugrid/pyugrid
-  license: BSD 3-Clause
-  summary: 'A Python API to utilize data written using the unstructured grid UGRID conventions.'
+  license: BSD-3-Clause
+  license_file: LICENSE.TXT
+  summary: A Python API to utilize data written using the unstructured grid UGRID conventions
 
 extra:
   recipe-maintainers:
